@@ -1,0 +1,13 @@
+service: link-to-list-server
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  profile: iamadmin
+
+functions:
+  getUrl:
+    handler: index.handler
+    url: true
